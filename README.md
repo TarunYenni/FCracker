@@ -1,12 +1,12 @@
 # FCracker
 
-**Current Release: v0.0.1 (2021.25.03)**
+**Current Release: v0.0.22(2021.25.03)**
 
 
 Overview
 --------
 - FCrack is a command-line tool designed to brute force encrypted files like zip, 7z, rar, pdf etc.
-- At present it works only in linux with proper depencences. This tool is made for both personal and CTF use.
+- At present it works only in linux with proper dependencies. This tool is made for both personal and CTF use.
 
 - FCrack is developed by [@zZBlackArrowZz](https://twitter.com/zZBlackArrowZz)
 
@@ -34,7 +34,7 @@ usage: FCrack.py [-h] -f <Input_File> -w <wordlist>
 FCrack.py: error: argument -f/--ifile is required
 ```
 
-Dependences
+Dependencies
 -----------
 ```
 sudo apt-get install john -y
