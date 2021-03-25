@@ -5,7 +5,7 @@
 
 Overview
 --------
-- FCrack is a command-line tool designed to brute force encrypted files like zip, 7z, rar, pdf etc.
+- FCrack is a command-line tool designed to brute force encrypted files like zip, 7z, rar, pdf, gpg etc.
 - At present it works only in linux with proper dependencies. This tool is made for both personal and CTF use.
 
 - FCrack is developed by [@zZBlackArrowZz](https://twitter.com/zZBlackArrowZz)
@@ -29,7 +29,7 @@ python FCrack.py
 ################### Currently in development ###############################
 
 
-Supported file formats: .zip, .rar, .pdf, .7z, .doc/.docx (2007/2013)
+Supported file formats: .zip, .rar, .pdf, .7z, .doc/.docx (2007/2013), .gpg
 usage: FCrack.py [-h] -f <Input_File> -w <wordlist>
 FCrack.py: error: argument -f/--ifile is required
 ```

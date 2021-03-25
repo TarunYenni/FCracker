@@ -14,7 +14,7 @@ print("#########################################################################
 print("############################################################################")
 print("################### Currently in development ###############################")
 print("\n")
-print("Supported file formats: .zip, .rar, .pdf, .7z, .doc/.docx (2007/2013)")
+print("Supported file formats: .zip, .rar, .pdf, .7z, .doc/.docx (2007/2013), .gpg")
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-f","--ifile", metavar="<Input_File>", required=True, help="Take's a file_name as input")
@@ -46,6 +46,8 @@ def create_hash(file_name):
         os.system("resources/office2john.py "+ file_name +">hash.txt")
     elif ".7z" in file_name:
         os.system("resources/7z2john.pl "+ file_name +"> hash.txt")
+    elif ".gpg" in file_name:
+        os.system("gpg2john "+ file_name + ">hash.txt")
     else:
         print("File Format not supported!!!")
         print("Supported File formats : .zip, .rar, .pdf, .7z, .doc/docx (2007/2013)")
