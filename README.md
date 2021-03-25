@@ -1,6 +1,6 @@
 # FCracker
 
-**Current Release: v0.0.22(2021.25.03)**
+**Current Release: v0.0.2 (2021.25.03)**
 
 
 Overview
