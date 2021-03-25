@@ -14,6 +14,7 @@ print("#########################################################################
 print("############################################################################")
 print("################### Currently in development ###############################")
 print("\n")
+print("Supported file formats: .zip, .rar, .pdf, .7z, .doc/.docx (2007/2013)")
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-f","--ifile", metavar="<Input_File>", required=True, help="Take's a file_name as input")
@@ -41,6 +42,7 @@ def create_hash(file_name):
         os.system("programs/7z2john.pl "+ file_name +"> hash.txt")
     else:
         print("File Format not supported!!!")
+        print("Supported File formats : .zip, .rar, .pdf, .7z, .doc/docx (2007/2013)")
 
 create_hash(file_name)
 crack_hash(wordlist)
